@@ -1,0 +1,52 @@
+[
+  {
+    "question": "What is compound interest?",
+    "answer": "Compound interest is the interest calculated on the initial principal and also on the accumulated interest from previous periods. The formula is A = P(1 + r/n)^(nt), where A is the final amount, P is principal, r is annual interest rate, n is compounding periods per year, and t is number of years. Compound interest helps your investments grow exponentially over time.",
+    "context": "Financial Fundamentals"
+  },
+  {
+    "question": "What is diversification in investing?",
+    "answer": "Diversification is an investment strategy where you spread your money across different asset classes, sectors, and geographic regions to reduce risk. Instead of putting all money in one stock, you invest in stocks, bonds, real estate, and commodities. This way, if one investment performs poorly, others may compensate. The goal is to reduce portfolio volatility while maintaining growth potential.",
+    "context": "Investment Strategy"
+  },
+  {
+    "question": "How do index funds work?",
+    "answer": "An index fund is a mutual fund or ETF designed to track a market index like the S&P 500. It holds all or a representative sample of securities in the index in the same proportions. Index funds offer passive investing with lower fees than actively managed funds, automatic diversification, and historically good returns. They're ideal for beginners and long-term investors.",
+    "context": "Investment Products"
+  },
+  {
+    "question": "What is asset allocation?",
+    "answer": "Asset allocation is the process of dividing your investment portfolio among different asset categories such as stocks, bonds, cash, and real estate. The allocation depends on your age, risk tolerance, investment goals, and time horizon. A common rule is the '100 minus your age' strategy: if you're 30, allocate 70% to stocks and 30% to bonds. Rebalance regularly to maintain target allocations.",
+    "context": "Portfolio Management"
+  },
+  {
+    "question": "What is a dividend?",
+    "answer": "A dividend is a payment made by a corporation to its shareholders, usually from profits. Dividends can be in cash or additional stock shares. Companies pay dividends to reward shareholders and attract investors. Dividend yield is calculated as annual dividends per share divided by stock price. Investing in dividend stocks can provide steady income and is often favored by retirees.",
+    "context": "Stock Investing"
+  },
+  {
+    "question": "What is risk tolerance?",
+    "answer": "Risk tolerance is your ability and willingness to endure fluctuations in the value of your investments. It depends on your financial situation, investment timeline, personality, and goals. Young investors with long time horizons can afford higher risk. Older investors nearing retirement typically have lower risk tolerance. Assess your risk tolerance honestly before investing to create an appropriate portfolio.",
+    "context": "Investment Psychology"
+  },
+  {
+    "question": "What is the stock market?",
+    "answer": "The stock market is a platform where shares of publicly-traded companies are bought and sold. Major stock markets include NYSE (New York Stock Exchange) and NASDAQ. Stock prices fluctuate based on company performance, economic conditions, and investor sentiment. Investing in stocks offers potential for long-term growth but comes with risk. Markets operate during specific hours and can be volatile in short term.",
+    "context": "Market Basics"
+  },
+  {
+    "question": "How do bonds work?",
+    "answer": "A bond is a fixed-income security where an investor lends money to a borrower (government or corporation) for a fixed period. The issuer pays interest (coupon) periodically and returns the principal at maturity. Bonds are less volatile than stocks and provide predictable income. Bond prices move inversely to interest rates: when rates rise, bond prices fall. Bonds are suitable for conservative investors seeking steady income.",
+    "context": "Fixed Income"
+  },
+  {
+    "question": "What is dollar-cost averaging?",
+    "answer": "Dollar-cost averaging (DCA) is investing a fixed amount at regular intervals regardless of market price. Instead of lump sum investing, you invest $100 monthly in a stock. When prices are high, you buy fewer shares; when prices are low, you buy more shares. This reduces the impact of market volatility and removes the need to time the market. DCA is a disciplined approach suitable for beginners.",
+    "context": "Investment Strategies"
+  },
+  {
+    "question": "What is a mutual fund?",
+    "answer": "A mutual fund is a pooled investment where multiple investors' money is managed by a professional fund manager. The fund invests in stocks, bonds, or other securities and distributes profits to investors. Mutual funds offer diversification, professional management, and low minimum investments. Fees (expense ratios) vary; index funds are typically cheaper than actively managed funds. They're ideal for passive investors.",
+    "context": "Investment Products"
+  }
+]

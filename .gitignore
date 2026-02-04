@@ -1,0 +1,73 @@
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Cache and temporary files
+.cache/
+*.cache
+.pytest_cache/
+.mypy_cache/
+.hypothesis/
+__pycache__/
+
+# Models and embeddings (large files)
+models/
+embeddings/
+*.bin
+*.pt
+*.pth
+*.safetensors
+
+# Logs
+logs/
+*.log
+
+# Environment variables (SENSITIVE)
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Testing
+.coverage
+htmlcov/
+
+# Project specific
+*.pkl
+*.pickle
+node_modules/

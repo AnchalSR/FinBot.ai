@@ -1,0 +1,59 @@
+version: '3.8'
+
+services:
+  api:
+    build: .
+    container_name: finbot-api
+    ports:
+      - "8000:8000"
+    environment:
+      - USE_OPENAI=${USE_OPENAI:-false}
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - OPENAI_MODEL=${OPENAI_MODEL:-gpt-3.5-turbo}
+      - HF_MODEL_NAME=${HF_MODEL_NAME:-mistralai/Mistral-7B-Instruct-v0.1}
+      - HF_API_TOKEN=${HF_API_TOKEN}
+      - EMBEDDING_MODEL=${EMBEDDING_MODEL:-all-MiniLM-L6-v2}
+      - DEVICE=${DEVICE:-cpu}
+      - CHUNK_SIZE=${CHUNK_SIZE:-500}
+      - TOP_K_DOCUMENTS=${TOP_K_DOCUMENTS:-5}
+      - LOG_LEVEL=${LOG_LEVEL:-INFO}
+      - TEMPERATURE=${TEMPERATURE:-0.7}
+    volumes:
+      - ./data:/app/data
+      - ./embeddings:/app/embeddings
+      - ./logs:/app/logs
+    restart: unless-stopped
+    command: python -m backend.api
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 5s
+
+  frontend:
+    build: .
+    container_name: finbot-frontend
+    ports:
+      - "8501:8501"
+    environment:
+      - API_URL=${API_URL:-http://api:8000}
+      - STREAMLIT_PORT=8501
+    depends_on:
+      - api
+    volumes:
+      - ./frontend:/app/frontend
+      - ./logs:/app/logs
+    restart: unless-stopped
+    command: streamlit run frontend/app.py --server.port=8501 --server.address=0.0.0.0
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8501/_stcore/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 5s
+
+volumes:
+  data:
+  embeddings:
+  logs:

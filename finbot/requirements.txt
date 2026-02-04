@@ -1,0 +1,39 @@
+beautifulsoup4==4.12.2
+fastapi==0.104.1
+python-dotenv==1.0.0
+uvicorn==0.24.0
+streamlit==1.29.0
+requests==2.31.0
+PyPDF2==3.0.1
+numpy==1.24.3
+torch==2.1.1
+transformers==4.35.2
+sentence-transformers==2.2.2
+faiss-cpu==1.7.4
+pydantic==2.5.0
+pydantic-settings==2.1.0
+langchain==0.1.1
+python-multipart==0.0.6
+pyarrow==14.0.0
+
+# Optional dependencies (uncomment as needed)
+
+# For OpenAI integration
+# openai==1.3.0
+
+# For Fine-tuning with LoRA (requires GPU recommended)
+# peft==0.7.1
+# bitsandbytes==0.41.0
+
+# For GPU support
+# torch-cuda (install separately based on your CUDA version)
+# faiss-gpu==1.7.4
+
+# For Docker deployment
+# docker==7.0.0
+
+# For development
+# pytest==7.4.3
+# black==23.12.0
+# flake8==6.1.0
+# mypy==1.7.1
